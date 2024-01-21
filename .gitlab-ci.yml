@@ -1,0 +1,25 @@
+include:
+  - https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools/-/raw/main/gsi-port-ci.yml
+
+variables:
+  ADAPTATION_TOOLS_BRANCH: main
+  DEV_TARBALL_VARIANT: _usrmerge
+  ROOTFS_URL: "https://ci.ubports.com/job/focal-hybris-rootfs-arm64/job/master/lastSuccessfulBuild/artifact/ubuntu-touch-android9plus-rootfs-arm64.tar.gz"
+  OTA_CHANNEL: "20.04/arm64/android9plus/stable"
+
+image: ubuntu:20.04
+
+build:
+  tags: [ubports]
+  script:
+    - apt update
+    - >-
+      apt install -y --no-install-recommends
+      android-tools-mkbootimg bc bison build-essential ca-certificates cpio curl
+      fakeroot flex git kmod libssl-dev libtinfo5 lz4 python2 sudo unzip wget xz-utils
+    - wget https://raw.githubusercontent.com/LineageOS/android_system_tools_mkbootimg/lineage-19.1/mkbootimg.py -O /usr/bin/mkbootimg
+    - >-
+      git clone -b $ADAPTATION_TOOLS_BRANCH
+      https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools.git
+      build
+    - ./build.sh
