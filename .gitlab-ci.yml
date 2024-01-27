@@ -22,4 +22,6 @@ build:
       git clone -b $ADAPTATION_TOOLS_BRANCH
       https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools.git
       build
+    # Fixup ueventd.rc permissions in GitLab CI repository checkout
+    - chmod 644 overlay/system/usr/share/halium-overlay/odm/ueventd.rc
     - ./build.sh
