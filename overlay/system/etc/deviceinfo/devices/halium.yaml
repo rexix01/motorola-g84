@@ -1,0 +1,21 @@
+FP5:
+  Names:
+    - fp5
+    - FP5
+    - Fairphone 5
+
+  PrettyName: Fairphone 5
+  DeviceType: phone
+  GridUnit: 24
+  SupportedOrientations:
+    - Portrait
+    - Landscape
+    - InvertedLandscape
+  MirAndroidPlatformServerBackpressure:
+    - false
+  MirAndroidPlatformServerPartialUpdates:
+    - true
+  MirAndroidPlatformServerEglSync:
+    - false
+  MirAndroidPlatformClientEglFlush:
+    - "!/usr/bin/unity8,!/usr/bin/lomiri,all"
