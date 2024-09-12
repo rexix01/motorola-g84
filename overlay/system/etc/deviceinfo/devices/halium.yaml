@@ -19,3 +19,6 @@ FP5:
     - false
   MirAndroidPlatformClientEglFlush:
     - "!/usr/bin/unity8,!/usr/bin/lomiri,all"
+
+  FlashlightSysfsPath: "/sys/class/leds/led:torch_0/brightness"
+  FlashlightSwitchPath: "/sys/class/leds/led:switch_0/brightness"
