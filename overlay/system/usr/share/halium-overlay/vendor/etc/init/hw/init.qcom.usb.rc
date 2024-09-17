@@ -1,0 +1,24 @@
+service time_daemon vendor.time_daemon_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
+service vendor.imsqmidaemon vendor.imsqmidaemon_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
+service vendor.imsrcsservice vendor.imsrcsservice_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
+service vendor.imsdaemon /vendor/bin/imsdaemon_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
+
+service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon_HYBRIS_DISABLED
+    disabled
+    oneshot
+    override
