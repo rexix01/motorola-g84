@@ -9,6 +9,7 @@ deviceinfo_kernel_cmdline="console=ttyMSM0,115200n8 androidboot.hardware=qcom an
 deviceinfo_kernel_clang_compile="true"
 deviceinfo_kernel_llvm_compile="true"
 deviceinfo_halium_version="11"
+
 deviceinfo_flash_pagesize="4096"
 deviceinfo_flash_offset_base="0x00000000"
 deviceinfo_flash_offset_kernel="0x00008000"
@@ -20,7 +21,9 @@ deviceinfo_bootimg_qcdt="false"
 deviceinfo_bootimg_header_version="3"
 deviceinfo_bootimg_os_version="11"
 deviceinfo_bootimg_os_patch_level="2023-12"
-# deviceinfo_bootimg_prebuilt_dtb="fairphone-fp5.dtb"
+deviceinfo_bootimg_prebuilt_dtb="fairphone-fp5.dtb"
+
 deviceinfo_bootimg_partition_size="100663296"
+
 # deviceinfo_prebuilt_dtbo="dtbo.img"
 deviceinfo_rootfs_image_sector_size="4096"
