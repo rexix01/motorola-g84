@@ -23,3 +23,4 @@ FP5:
   FlashlightSysfsPath: "/sys/class/leds/led:torch_0/brightness"
   FlashlightSwitchPath: "/sys/class/leds/led:switch_0/brightness"
   DoubleTapToWake: "/sys/devices/platform/goodix_ts.0/gesture/double_en|1|0"
+  OfonoPlugin: binder
