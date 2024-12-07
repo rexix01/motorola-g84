@@ -32,7 +32,7 @@ echo $KERNEL_DIR
 
 cd "$TMPDOWN/$KERNEL_DIR"
 
-BRANCH="odm/dev/target/13/fp5"
+BRANCH="kernel/13/fp5"
 DTS_BRANCH="kernel/13/fp5"
 GERRIT_URL="https://gerrit-public.fairphone.software"
 PLATFORM_VENDOR_URL="${GERRIT_URL}/platform/vendor"
