@@ -104,4 +104,5 @@
         <item>3399</item>
     </integer-array>
 
+    <integer name="config_screenBrightnessSettingMaximum">4095</integer>
 </resources>
