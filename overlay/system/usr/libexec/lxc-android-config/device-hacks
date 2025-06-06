@@ -1,8 +1,8 @@
 #!/bin/sh
 
-chown system:android_input /sys/class/leds/led:torch_0/brightness
-chown system:android_input /sys/class/leds/led:switch_0/brightness
+chown system:android_input /sys/class/leds/mmc1:/brightness
+chown system:android_input /sys/class/leds/vibrator/brightness
 
-chmod 666 /sys/class/leds/led:torch_0/brightness
-chmod 666 /sys/class/leds/led:switch_0/brightness
+chmod 666 /sys/class/leds/mmc1:/brightness
+chmod 666 /sys/class/leds/vibrator/brightness
 

@@ -1,10 +1,10 @@
 FP5:
   Names:
-    - fp5
-    - FP5
-    - Fairphone 5
+    - bangkk
+    - bangkk
+    - Motorola G84 5G
 
-  PrettyName: Fairphone 5
+  PrettyName: Motorola G84
   DeviceType: phone
   GridUnit: 24
   SupportedOrientations:
@@ -20,8 +20,7 @@ FP5:
   MirAndroidPlatformClientEglFlush:
     - "!/usr/bin/unity8,!/usr/bin/lomiri,all"
 
-  FlashlightSysfsPath: "/sys/class/leds/led:torch_0/brightness"
-  FlashlightSwitchPath: "/sys/class/leds/led:switch_0/brightness"
+  FlashlightSysfsPath: "/sys/class/leds/mmc1:/brightness"
   DoubleTapToWake: "/sys/devices/platform/goodix_ts.0/gesture/double_en|1|0"
   OfonoPlugin: binder
   OfonoImplementsIms: true
